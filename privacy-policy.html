@@ -43,12 +43,15 @@
      <strong>on your device</strong>: <strong>steps, active energy burned, sleep, and hydration</strong>.
      Access is <strong>read‑only</strong> — Tally never writes to Health Connect. This data is used
      solely to personalize in‑app coaching suggestions and to show you your daily activity context.</p>
-  <p>Your Health Connect data is <strong>not stored on our servers</strong>. When you actively ask the
-     in‑app coach a question, a <strong>brief summary</strong> of these metrics (for example,
-     "steps today: 5,000; sleep: 7h") may be sent to Google's Gemini model (via Firebase AI Logic)
-     <strong>only to generate that coaching response</strong> — see Section 4. Your Health Connect data
-     is <strong>never sold, never used for advertising, and never shared with third parties for their
-     own purposes</strong>. You control this permission in Health Connect and can revoke it at any time,
+  <p>Your Health Connect data is <strong>not stored on our servers</strong>. It leaves your device
+     <strong>only when you actively use the AI coach</strong> — that is, only when you tap to ask the
+     coach a question. At that moment a <strong>brief summary</strong> of these metrics (for example,
+     "steps today: 5,000; sleep: 7h") is sent to Google's Gemini model (via Firebase AI Logic)
+     <strong>solely to generate that one coaching response</strong> — see Section 4. <strong>If you do
+     not use the AI coach, no Health Connect data is transmitted anywhere</strong>; it is only read on
+     your device to show your daily context and power on‑device tips. Your Health Connect data is
+     <strong>never sold, never used for advertising, and never shared with third parties for their own
+     purposes</strong>. You control this permission in Health Connect and can revoke it at any time,
      which immediately stops all access.</p>
 
   <h2>4. AI coach (Google Gemini via Firebase AI Logic)</h2>
