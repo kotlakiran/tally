@@ -21,7 +21,7 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated: 30 September 2026</p>
+  <p class="muted">Last updated: 14 October 2026</p>
 
   <p>This Privacy Policy explains how the <strong>Tally</strong> app ("Tally", "we", "us")
      handles your information. Tally is designed to be <strong>private and on‑device‑first</strong>.
@@ -38,21 +38,25 @@
      off or delete the backup at any time. This feature is <strong>off by default</strong> and requires
      your explicit sign‑in and permission (scope <code>drive.appdata</code>).</p>
 
-  <h2>3. Health Connect (optional)</h2>
-  <p>If you connect Health Connect, Tally <strong>reads</strong> the following data types
-     <strong>on your device</strong>: <strong>steps, active energy burned, sleep, and hydration</strong>.
-     Access is <strong>read‑only</strong> — Tally never writes to Health Connect. This data is used
-     solely to personalize in‑app coaching suggestions and to show you your daily activity context.</p>
-  <p>Your Health Connect data is <strong>not stored on our servers</strong>. It leaves your device
-     <strong>only when you actively use the AI coach</strong> — that is, only when you tap to ask the
-     coach a question. At that moment a <strong>brief summary</strong> of these metrics (for example,
-     "steps today: 5,000; sleep: 7h") is sent to Google's Gemini model (via Firebase AI Logic)
-     <strong>solely to generate that one coaching response</strong> — see Section 4. <strong>If you do
-     not use the AI coach, no Health Connect data is transmitted anywhere</strong>; it is only read on
-     your device to show your daily context and power on‑device tips. Your Health Connect data is
-     <strong>never sold, never used for advertising, and never shared with third parties for their own
-     purposes</strong>. You control this permission in Health Connect and can revoke it at any time,
-     which immediately stops all access.</p>
+  <h2>3. Health Connect data (optional)</h2>
+  <p>If you connect Health Connect, Tally <strong>accesses and reads</strong> the following
+     health data types <strong>on your device</strong>: <strong>steps, active energy burned,
+     sleep sessions and duration, and hydration volume</strong>. Tally does not write or
+     modify Health Connect data. This access is optional, read-only, and requires your
+     permission in Android Health Connect.</p>
+  <p>Tally collects a temporary summary of these metrics only to show daily health context
+     and personalize in-app habit and coaching suggestions. Tally does not collect health
+     data for advertising, profiling, sale, or unrelated purposes. Health Connect data is
+     not stored on Tally's servers and is not retained as a separate health-data history
+     by Tally.</p>
+  <p>Health Connect data leaves your device <strong>only when you actively use the AI coach</strong>
+     by tapping to ask a question. At that moment, a brief summary of the permitted metrics
+     (for example, "steps today: 5,000; sleep: 7h") is sent to Google's Gemini model via
+     Firebase AI Logic solely to generate that one coaching response. If you do not use the
+     AI coach, no Health Connect data is transmitted anywhere. Your health data is never
+     sold, used for advertising, or shared with third parties for their own purposes.
+     You can decline or revoke Health Connect permission at any time; revocation stops
+     future access immediately.</p>
 
   <h2>4. AI coach (Google Gemini via Firebase AI Logic)</h2>
   <p>When you ask the in‑app coach a question, your message and a small amount of context (such as a
@@ -72,9 +76,11 @@
     <li>We do not track you across other apps or websites.</li>
   </ul>
 
-  <h2>7. Data deletion</h2>
+  <h2>7. Data deletion and retention</h2>
   <p>You can delete your data by clearing the app's storage or uninstalling the app. If you enabled
-     Google Drive backup, you can delete the backup from your Google Drive or by turning the feature off.</p>
+     Google Drive backup, you can delete the backup from your Google Drive or by turning the feature off.
+     Revoking Health Connect permission stops future access, and Tally does not retain a separate
+     copy of Health Connect data.</p>
 
   <h2>8. Children</h2>
   <p>Tally is not directed to children under 13 (or the minimum age in your country).</p>
